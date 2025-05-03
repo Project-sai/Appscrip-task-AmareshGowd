@@ -13,7 +13,7 @@ This is a demo product listing page built using **Next.js** as part of the Appsc
 
 ## 🚀 Live Demo
 
-👉 [Live Site on Netlify](https://your-netlify-url.netlify.app)
+👉 [Live Site on Netlify](https://appscrip-smartshop.netlify.app/)
 
 ## 📁 Features
 
