@@ -1,0 +1,145 @@
+
+.sidebar {
+    width: 30%;
+    max-width: 300px;
+    min-width: 200px;
+    flex-shrink: 0;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  }
+  
+  .filterContent {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .filterContent details {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .filterContent details[open] {
+    border-color: #000;
+  }
+  
+  .filterContent summary {
+    font-weight: 600;
+    font-size: 15px;
+    color: #333;
+    list-style: none;
+    position: relative;
+    padding-right: 20px;
+  }
+  
+  .filterContent summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  .filterContent summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    transition: transform 0.3s;
+  }
+  
+  .filterContent details[open] summary::after {
+    content: "−";
+  }
+  
+  .dropdownContent {
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .selectAll {
+    font-weight: 600;
+    color: #000;
+    padding: 4px 0;
+  }
+  
+  .unselectLink {
+    color: #666;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  
+  .unselectLink:hover {
+    color: #000;
+  }
+  
+  .checkboxGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .checkboxGroup label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 4px 0;
+    transition: color 0.2s;
+  }
+  
+  .checkboxGroup label:hover {
+    color: #000;
+  }
+  
+  .checkboxGroup input[type="checkbox"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s;
+  }
+  
+  .checkboxGroup input[type="checkbox"]:checked {
+    background-color: #000;
+    border-color: #000;
+  }
+  
+  .checkboxGroup input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .summary input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-left: 105px;
+    accent-color: #000; 
+  }
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      max-width: none;
+      margin-bottom: 20px;
+    }
+  }

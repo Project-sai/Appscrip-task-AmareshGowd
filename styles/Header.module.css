@@ -1,0 +1,121 @@
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .topHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .centerText {
+    font-size: 20px;
+    font-weight:bold;
+    text-align: center;
+
+  }
+  
+  .icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .icon {
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .navContainer {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 20px;
+    position: relative;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .navLinks {
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .navLinks a {
+    position: relative;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .navLinks a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease;
+  }
+  
+  .navLinks a:hover::after {
+    width: 100%;
+  }
+  
+  .productSection {
+    padding: 60px 20px;
+    text-align: center;
+    
+  }
+  
+  .productSection h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  .productSection p {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .navLinks {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      margin-top: 10px;
+    }
+  
+    .navLinks.show {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+    .productSection {
+        padding: 20px 10px;
+        text-align: center;
+        
+      }
+  }

@@ -1,0 +1,272 @@
+/* styles/Footer.module.css */
+
+.topFooter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    gap: 30px;
+  }
+  
+  .newsletter,
+  .contactColumn {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+  }
+  
+  .contactColumn h3 {
+    margin-top: 0;
+  }
+
+  
+  
+  .contactColumn {
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  .footerColumns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .bottomFooter {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+.footer {
+    background-color: black;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+  
+  .newsletter {
+    max-width: 1200px;
+    
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .newsletter h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .newsletter p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .emailInput {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .emailInput input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    font-size: 14px;
+  }
+  
+  .emailInput button {
+    padding: 12px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .footerColumns {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .column {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .column h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .column ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .column ul li:hover {
+    text-decoration: underline;
+  }
+  
+  .column p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .currencyTitle {
+    margin-top: 20px;
+  }
+  
+  .currency {
+    font-size: 14px;
+  }
+  
+  .currency strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .bottomFooter {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .social, .paymentMethods {
+    flex: 1;
+    min-width: 200px;
+    
+  }
+  
+  .social h3, .paymentMethods h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  .socialIcons, .paymentIcons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .socialIcons span, .paymentIcons span {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 20px;
+  }
+  
+  .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    color: white;
+  }
+  .footerRightColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 30px;
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .emailInput {
+      flex-direction: column;
+    }
+  
+    .emailInput input {
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+  
+    .emailInput button {
+      border-radius: 4px;
+    }
+  
+    .footerColumns {
+      flex-direction: column;
+      gap: 30px;
+      
+    }
+  
+    .bottomFooter {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .socialIcons, .paymentIcons {
+      justify-content: center;
+    }
+    .contactColumn {
+   text-align: center;
+      }
+  }
+  @media (max-width: 768px) {
+    .topFooter,
+    .footerColumns,
+    .bottomFooter {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    .emailInput {
+      flex-direction: column;
+    }
+  
+    .emailInput input {
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+  
+    .emailInput button {
+      border-radius: 4px;
+    }
+  
+    .socialIcons,
+    .paymentIcons {
+      justify-content: center;
+    }
+  }
+  
